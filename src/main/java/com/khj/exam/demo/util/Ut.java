@@ -19,8 +19,4 @@ public class Ut {
 		return String.format(format, arges);
 	}
 
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 6b60241b4e7e2dd75d80f5707fd0aadee3e5b012
