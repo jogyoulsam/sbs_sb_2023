@@ -15,15 +15,26 @@ public class MemberService {
 	public int join(String loginId, String loginPw, String name, String nickname, String cellphoneNo, String email) {
 		Member oldMember = getMemberByLoginId(loginId);
 		
+<<<<<<< HEAD
 		//로그인아이디 중복체크
+=======
+		// 로그인아이디 중복체크
+>>>>>>> 6b60241b4e7e2dd75d80f5707fd0aadee3e5b012
 		if ( oldMember != null ) {
 			return -1;
 		}
 		
+<<<<<<< HEAD
 		//이름 + 이메일 중복체크
 		oldMember = getMemberByNameAndEmail(name, email);
 		
 		if ( oldMember != null) {
+=======
+		// 이름 + 이메일 중복체크
+		oldMember = getMemberByNameAndEmail(name, email);
+		
+		if ( oldMember != null ) {
+>>>>>>> 6b60241b4e7e2dd75d80f5707fd0aadee3e5b012
 			return -2;
 		}
 		

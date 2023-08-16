@@ -44,9 +44,16 @@ public interface MemberRepository {
 			SELECT *
 			FROM `member` AS M
 			WHERE M.name = #{name}
+<<<<<<< HEAD
 			AND M.email = #{email}
 			""")
 	public Member getMemberByNameAndEmail(@Param("name") String name, @Param("email") String email);
 	
 	
+=======
+			AND M.email = #{email}			
+			""")
+	public Member getMemberByNameAndEmail(@Param("name") String name, @Param("email") String email);
+
+>>>>>>> 6b60241b4e7e2dd75d80f5707fd0aadee3e5b012
 }
